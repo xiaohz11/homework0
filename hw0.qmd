@@ -1,0 +1,55 @@
+---
+title: "hw0"
+author: Xiaohan Zhao
+format: html
+editor: visual
+---
+
+Question 1
+
+```{r, echo=FALSE}
+a <- 1
+b <- 3
+c <- 2
+
+#Calculate discriminant
+disc <- - b^2 - 4*a*c
+
+#Find real soluctions
+if (disc >= 0) {
+  x1 <- (- b + sqrt(disc)) / (2*a)
+  x2 <- (- b - sqrt(disc)) / (2*a)
+  
+  #Print solutions
+  cat("x1 =", x1, "\n")
+  cat("x2 =", x1, "\n")
+} else {
+  x1 <- NA
+  x2 <- NA
+  cat("No real solutions exist. \n")
+}
+```
+
+Question 2
+
+```{r, echo=FALSE}
+x <- seq(-5, 5, length = 300)
+plot(x, a*x^2+b*x+c, type = "l")
+abline(h=0, lty=2)
+```
+
+Question 3
+
+Change format from "html" to "pdf" in the header.
+
+Question 4
+
+Change value of a, b, and c, and run the question 1 code again.
+
+Question 5
+
+Change value of a, b, and c, and run the question 1 code again.
+
+Question 6
+
+Change "pdf" to "html".
